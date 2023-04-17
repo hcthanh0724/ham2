@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Nhập số</h3>
+<label>
+    <input type="number"  oninput="addition(this.value)" onchange="addition(this.value)">
+</label>
+<br>
+<p>Gía trị đầu ra: <span id="z"></span></p>
+</body>
+</html>
+
+<script>
+// let a = document.getElementById("s1")
+    function addition(a){
+        a = parseFloat(a);
+        document.getElementById("z").innerHTML = a + 1
+}
+</script>
